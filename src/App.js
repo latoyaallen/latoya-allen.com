@@ -47,13 +47,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const currentProject = () => (
+const CurrentProject = () => (
   <a
     className={css(styles.links)}
-    href=""
+    href="https://latoyaallen.blog/2019/11/16/12-months-12-responsive-sites/"
     target="_blank"
     rel="noopener noreferrer">
-    12 Months, 12 Responsice Apps
+    12 Months, 12 Responsive Sites
   </a>
 );
 
@@ -93,7 +93,7 @@ function App() {
     <div>
       <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
       <h4 className={css(styles.jobText)}>I'm a Front-End Developer based in Brooklyn, NY.</h4>
-      <p className={css(styles.mainText)}>Currently, I'm working in JavaScript, React, Redux, and Rails at Daily Kos. The open source project I spend some of my free time on is 12 Months, 12 Responsive Sites. You can find me on {<GitHub />}, {<LinkedIn />} and {<Email />}.</p>
+      <p className={css(styles.mainText)}>Currently, I'm working in JavaScript, React, Redux, and Rails at Daily Kos. The open source project I spend some of my free time on is {<CurrentProject />}. You can find me on {<GitHub />}, {<LinkedIn />} and {<Email />}.</p>
     </div>
   );
 }
