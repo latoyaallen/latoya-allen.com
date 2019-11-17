@@ -53,7 +53,7 @@ const CurrentProject = () => (
     href="https://latoyaallen.blog/2019/11/16/12-months-12-responsive-sites/"
     target="_blank"
     rel="noopener noreferrer">
-    12 Months, 12 Responsive Sites
+    5 Weeks, 5 Responsive Sites
   </a>
 );
 
