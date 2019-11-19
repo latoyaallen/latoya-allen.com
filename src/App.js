@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 const CurrentProject = () => (
   <a
     className={css(styles.links)}
-    href="https://latoyaallen.blog/2019/11/16/12-months-12-responsive-sites/"
+    href="https://latoyaallen.blog/2019/11/16/5-weeks-5-responsive-sites/"
     target="_blank"
     rel="noopener noreferrer">
     5 Weeks, 5 Responsive Sites
