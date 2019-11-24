@@ -47,6 +47,16 @@ const styles = StyleSheet.create({
   },
 });
 
+const Blog = () => (
+  <a
+    className={css(styles.links)}
+    href="https://latoyaallen.blog"
+    target="_blank"
+    rel="noopener noreferrer">
+    blog
+  </a>
+);
+
 const CurrentProject = () => (
   <a
     className={css(styles.links)}
@@ -88,12 +98,11 @@ const Email = () => (
 );
 
 function App() {
-
   return (
     <div>
       <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
       <h4 className={css(styles.jobText)}>I'm a Front-End Developer based in Brooklyn, NY.</h4>
-      <p className={css(styles.mainText)}>Currently, I'm working in JavaScript, React, Redux, and Rails at Daily Kos. The open source project I spend some of my free time on is {<CurrentProject />}. You can find me on {<GitHub />}, {<LinkedIn />} and {<Email />}.</p>
+      <p className={css(styles.mainText)}>Currently, I'm working in JavaScript, React, Redux, and Rails at Daily Kos. I occasionally {<Blog />}. The open source project I spend some of my free time on is {<CurrentProject />}. You can find me on {<GitHub />}, {<LinkedIn />}, and {<Email />}.</p>
     </div>
   );
 }
