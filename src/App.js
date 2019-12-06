@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 50,
     cursor: 'pointer',
-    color: '#483d8b',
+    color: 'black',
     '@media (min-width: 600px)': {
       marginLeft: '10%',
     },
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     width: '75%',
-    color: '#483d8b',
+    color: 'black',
+    fontSize: '20px',
     '@media (min-width: 600px)': {
       marginLeft: '10%',
     },
@@ -34,7 +35,8 @@ const styles = StyleSheet.create({
     width: '73%',
     marginTop: 40,
     marginBottom: 20,
-    color: '#483d8b',
+    color: 'black',
+    fontSize: '20px',
     '@media (min-width: 600px)': {
       marginLeft: '10%',
     },
@@ -101,8 +103,10 @@ function App() {
   return (
     <div>
       <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
-      <h4 className={css(styles.jobText)}>I'm a Front-End Developer based in Brooklyn, NY.</h4>
-      <p className={css(styles.mainText)}>Currently, I'm working in JavaScript, React, Redux, and Rails at Daily Kos. I occasionally {<Blog />}. The open source project I spend some of my free time on is {<CurrentProject />}. You can find me on {<GitHub />}, {<LinkedIn />}, and {<Email />}.</p>
+      <p className={css(styles.jobText)}>I'm a Front-End Developer based in Brooklyn, NY.</p>
+      <p className={css(styles.mainText)}>I work in JavaScript, React, Redux, and Rails at Daily Kos. I started of as a back-end developer in 2013, but curiosity led me to the front-end three years ago. I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration.</p>
+      <p className={css(styles.mainText)}> I enjoy contributing to front end projects, and I occasionally blog.  Right now, I'm working on {<CurrentProject />}.</p>
+      <p className={css(styles.mainText)}>My goal is to impact, educate, and inspire folks who want to get into tech. If you have any questions about working in the tech industry, you can find me on {<GitHub />} or {<LinkedIn />}.</p>
     </div>
   );
 }
