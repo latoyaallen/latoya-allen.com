@@ -105,7 +105,7 @@ function App() {
       <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
       <p className={css(styles.jobText)}>I'm a Front-End Developer based in Brooklyn, NY.</p>
       <p className={css(styles.mainText)}>I work in JavaScript, React, Redux, and Rails at Daily Kos. I started of as a back-end developer in 2013, but curiosity led me to the front-end three years ago. I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration.</p>
-      <p className={css(styles.mainText)}> I enjoy contributing to front end projects, and I occasionally blog.  Right now, I'm working on {<CurrentProject />}.</p>
+      <p className={css(styles.mainText)}> I enjoy contributing to open source projects, and I occasionally blog.  Right now, I'm working on {<CurrentProject />}.</p>
       <p className={css(styles.mainText)}>My goal is to impact, educate, and inspire folks who want to get into tech. If you have any questions about working in the tech industry, you can find me on {<GitHub />} or {<LinkedIn />}.</p>
     </div>
   );
