@@ -70,20 +70,56 @@ const steps = [
   {
     id: 'whatDoYouWantToKnow',
     message: 'What should we talk about?',
-    delay: 4000,
+    delay: 3000,
     trigger: 'whatDoYouWantToKnowOptions',
   },
   {
     id: 'whatDoYouWantToKnowOptions',
     options: [
-      { value: 1, label: 'Does LaToya work in React?', trigger: 'comingSoon' },
-      { value: 2, label: 'Does LaToya have any back-end experience?', trigger: 'comingSoon' },
+      { value: 1, label: 'Does LaToya have any testing experience?', trigger: 'absolutely' },
+      { value: 2, label: 'What is her favorite programming language?', trigger: 'clojure' },
+      { value: 3, label: 'Does LaToya work in React?', trigger: 'react' },
+      { value: 4, label: 'Does LaToya have any back-end experience?', trigger: 'comingSoon' },
     ],
+    delay: 2500,
+  },
+  {
+    id: 'absolutely',
+    component: (
+      <div>
+        <iframe
+          src={"https://giphy.com/embed/LSvB8JdEf4yascdXf1"}
+          height={150}
+          width={268}
+          title={"whatDoYouWantToKnowOptions"}
+        />
+      </div>
+    ),
+    delay: 2500,
+    trigger: 'testing',
+  },
+  {
+    id: 'clojure',
+    message: "Clojure.  But she primarily works in React, Redux, and Rails.",
+    delay: 2500,
+    trigger: 'whatDoYouWantToKnowOptions',
+  },
+  {
+    id: 'react',
+    message: "Yes.  She has 3 years of experience working in React and Redux.  She has 5 years of experience workin in Rails.",
+    delay: 2500,
+    trigger: 'whatDoYouWantToKnowOptions',
+  },
+  {
+    id: 'testing',
+    message: "She has 5 years of TDD experience.  She's strongest in Jest, Enzyme, and RSpec.",
+    delay: 4500,
+    trigger: 'whatDoYouWantToKnowOptions',
   },
   {
     id: 'comingSoon',
     message: "So...I haven't been programed to do that yet. 🤦🏾‍♀️",
-    delay: 4500,
+    delay: 3000,
     trigger: 'email',
   },
   {
