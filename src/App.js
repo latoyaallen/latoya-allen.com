@@ -1,6 +1,14 @@
 import React from 'react';
 import './App.css';
 import { StyleSheet, css } from 'aphrodite';
+import Chat from './components/Chat';
+import {
+  MOBILE_LANDSCAPE,
+  TABLET_PORTRAIT,
+  TABLET_LANDSCAPE,
+  LAPTOPS,
+} from './lib/breakpoints';
+
 
 const styles = StyleSheet.create({
   nameText: {
@@ -47,6 +55,32 @@ const styles = StyleSheet.create({
   links: {
     textDecoration: 'none',
   },
+  botContainer: {
+    marginLeft: '3%',
+    lineHeight: '1.8',
+    color: '#f28269',
+    [MOBILE_LANDSCAPE]: {
+      marginLeft: '20%',
+      paddingRight: '11%',
+      color: 'black',
+    },
+    [TABLET_PORTRAIT]: {
+      marginRight: '11.5%',
+      marginLeft: '30%',
+      color: 'pink',
+    },
+    [TABLET_LANDSCAPE]: {
+      marginRight: '11%',
+      marginLeft: '30%',
+      color: 'blue',
+    },
+    [LAPTOPS]: {
+      marginRight: '12%',
+      marginLeft: '40%',
+      color: 'green',
+    }
+  },
+
 });
 
 const Blog = () => (
@@ -107,6 +141,10 @@ function App() {
       <p className={css(styles.mainText)}>I work in JavaScript, React, Redux, and Rails at Daily Kos. I started of as a back-end developer in 2013, but curiosity led me to the front-end three years ago. I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration.</p>
       <p className={css(styles.mainText)}> I enjoy contributing to open source projects, and I occasionally blog.  Right now, I'm working on {<CurrentProject />}.</p>
       <p className={css(styles.mainText)}>My goal is to impact, educate, and inspire folks who want to get into tech. If you have any questions about working in the tech industry, you can find me on {<GitHub />} or {<LinkedIn />}.</p>
+      <p className={css(styles.mainText)}>If you'd like to know about my work, ask Janet below.</p>
+      <div className={css(styles.botContainer)}>
+        <Chat />
+      </div>
     </div>
   );
 }
