@@ -21,6 +21,16 @@ const styles = StyleSheet.create({
   },
 });
 
+const MiniMax = () => (
+  <a
+    className={css(styles.links)}
+    href="https://rubygems.org/gems/minimax_ttt"
+    target="_blank"
+    rel="noopener noreferrer">
+    this gem.
+  </a>
+);
+
 const Email = () => (
   <a
     className={css(styles.links)}
@@ -77,9 +87,10 @@ const steps = [
     id: 'whatDoYouWantToKnowOptions',
     options: [
       { value: 1, label: 'Does LaToya have any testing experience?', trigger: 'absolutely' },
-      { value: 2, label: 'What is her favorite programming language?', trigger: 'clojure' },
       { value: 3, label: 'Does LaToya work in React?', trigger: 'react' },
-      { value: 4, label: 'Does LaToya have any back-end experience?', trigger: 'comingSoon' },
+      { value: 4, label: 'Does LaToya have any back-end experience?', trigger: 'backEnd' },
+      { value: 5, label: 'Her answers to comment interview questions', trigger: 'comingSoon' },
+      { value: 6, label: 'Something else', trigger: 'comingSoon' },
     ],
     delay: 2500,
   },
@@ -99,12 +110,6 @@ const steps = [
     trigger: 'testing',
   },
   {
-    id: 'clojure',
-    message: "Clojure.  But she primarily works in React, Redux, and Rails.",
-    delay: 2500,
-    trigger: 'whatDoYouWantToKnowOptions',
-  },
-  {
     id: 'react',
     message: "Yes.  She has 3 years of experience working in React and Redux.  She has 5 years of experience workin in Rails.",
     delay: 2500,
@@ -114,6 +119,22 @@ const steps = [
     id: 'testing',
     message: "She has 5 years of TDD experience.  She's strongest in Jest, Enzyme, and RSpec.",
     delay: 4500,
+    trigger: 'whatDoYouWantToKnowOptions',
+  },
+  {
+    id: 'backEnd',
+    message: "She does.  She used to work in Rails, Clojure, and Java on the backend. If you're into artificial intelligence, alpha-beta algorithms, decision theory, or game theory, checkout",
+    delay: 4500,
+    trigger: 'minimax',
+  },
+  {
+    id: 'minimax',
+    component: (
+      <div>
+        <MiniMax />
+      </div>
+    ),
+    delay: 3000,
     trigger: 'whatDoYouWantToKnowOptions',
   },
   {

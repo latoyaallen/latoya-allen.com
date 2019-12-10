@@ -83,6 +83,16 @@ const styles = StyleSheet.create({
 
 });
 
+const BackEnd = () => (
+  <a
+    className={css(styles.links)}
+    href="https://rubygems.org/gems/minimax_ttt"
+    target="_blank"
+    rel="noopener noreferrer">
+    back-end developer
+  </a>
+);
+
 const Blog = () => (
   <a
     className={css(styles.links)}
@@ -138,7 +148,7 @@ function App() {
     <div>
       <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
       <p className={css(styles.jobText)}>I'm a Front-End Developer based in Brooklyn, NY.</p>
-      <p className={css(styles.mainText)}>I work in JavaScript, React, Redux, and Rails at Daily Kos. I started of as a back-end developer in 2013, but curiosity led me to the front-end three years ago. I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration.</p>
+      <p className={css(styles.mainText)}>I work in JavaScript, React, Redux, and Rails at Daily Kos. I started of as a {<BackEnd />} in 2013, but curiosity led me to the front-end three years ago. I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration.</p>
       <p className={css(styles.mainText)}>If you'd like to know about my work, ask Janet below.</p>
       <div className={css(styles.botContainer)}>
         <Chat />
