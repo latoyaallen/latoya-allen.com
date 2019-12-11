@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import LinkedIn from './LinkedIn';
 import GitHub from './GitHub';
+import CodeForThisSite from './CodeForThisSite';
 
 import {
    TABLET_PORTRAIT,
@@ -12,25 +13,26 @@ import {
 const styles = StyleSheet.create({
   navContainer: {
     display: 'flex',
-    marginLeft: '50%',
+    marginLeft: '12%',
     lineHeight: '1.8',
-    color: 'black',
     [TABLET_PORTRAIT]: {
-    marginLeft: '80%',
+    marginLeft: '30%',
     },
     [TABLET_LANDSCAPE]: {
+    marginLeft: '30%',
     },
     [LAPTOPS]: {
+    marginLeft: '75%',
     }
   },
   headerItem: {
-    marginRight: '10%',
+    marginRight: '9%',
   },
 });
 
 const Header = (props) => (
   <div className={css(styles.navContainer)}>
-    <p className={css(styles.headerItem)}>Projects</p>
+    <p className={css(styles.headerItem)}>{<CodeForThisSite/>}</p>
     <p className={css(styles.headerItem)}>{<LinkedIn/>}</p>
     <p className={css(styles.headerItem)}>{<GitHub/>}</p>
   </div>

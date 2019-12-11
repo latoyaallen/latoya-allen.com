@@ -68,7 +68,6 @@ const steps = [
       { value: 5, label: 'Her answers to comment interview questions', trigger: 'comingSoon' },
       { value: 6, label: 'Something else', trigger: 'comingSoon' },
     ],
-    delay: 2500,
   },
   {
     id: 'absolutely',

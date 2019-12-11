@@ -1,74 +1,57 @@
 import React from 'react';
 import './App.css';
-import { StyleSheet, css } from 'aphrodite';
-import Chat from './components/Chat';
-import Header from './components/Header';
-import IntroText from './components/IntroText';
+import Projects from './components/Projects';
+import Home from './components/Home';
 
-import {
-  MOBILE_LANDSCAPE,
-  TABLET_PORTRAIT,
-  TABLET_LANDSCAPE,
-  LAPTOPS,
-} from './lib/breakpoints';
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {view: 'home'};
+    this.handleProjects = this.handleProjects.bind(this);
+    this.handleHome = this.handleHome.bind(this);
+  }
 
+  handleProjects(id) {
+    window.location.assign(`/projects/fashion-water`)
+    this.setState({view: 'projects'});
+  }
 
-const styles = StyleSheet.create({
-  mainText: {
-    marginLeft: '12%',
-    width: '73%',
-    marginTop: 40,
-    marginBottom: 20,
-    color: 'black',
-    fontSize: '20px',
-    '@media (min-width: 600px)': {
-      marginLeft: '10%',
-    },
-    '@media (min-width: 780px)': {
-      marginLeft: '9%',
+  handleHome() {
+    window.location.assign(`/`)
+    this.setState({view: 'home'});
+  }
+
+  componentDidMount() {
+    const pathname = window.location.pathname.substring(1,6);
+    console.log(pathname);
+    if(pathname === 'proje') {
+      this.setState({view: 'projects'});
+    } else {
+      this.setState({view: 'home'});
     }
-  },
-  links: {
-    textDecoration: 'none',
-  },
-  botContainer: {
-    marginLeft: '3%',
-    lineHeight: '1.8',
-    color: '#f28269',
-    [MOBILE_LANDSCAPE]: {
-      marginLeft: '20%',
-      paddingRight: '11%',
-      color: 'black',
-    },
-    [TABLET_PORTRAIT]: {
-      marginRight: '11.5%',
-      marginLeft: '30%',
-      color: 'pink',
-    },
-    [TABLET_LANDSCAPE]: {
-      marginRight: '11%',
-      marginLeft: '30%',
-      color: 'blue',
-    },
-    [LAPTOPS]: {
-      marginRight: '12%',
-      marginLeft: '40%',
-      color: 'green',
+  }
+
+
+  render() {
+    let view;
+    console.log(this.state.view);
+
+    if(this.state.view === 'home') {
+      view =
+        <Home />
     }
-  },
 
-});
+    if(this.state.view === 'projects') {
+      view =
+      <Projects />
+    }
 
-function App() {
   return (
     <div>
-      <Header />
-      <IntroText />
-      <div className={css(styles.botContainer)}>
-        <Chat />
-      </div>
+      {view}
     </div>
   );
+}
 }
 
 export default App;
