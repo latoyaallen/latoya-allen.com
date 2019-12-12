@@ -1,7 +1,13 @@
 import React from 'react';
+import DesignPatterns from './DesignPatterns'
 
 const Projects = (props) => (
-  <div>Coming Soon</div>
+  <div>
+    <h1>
+      Projects
+    </h1>
+    <DesignPatterns />
+  </div>
 )
 
 export default Projects;
