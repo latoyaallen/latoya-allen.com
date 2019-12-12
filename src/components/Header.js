@@ -3,6 +3,7 @@ import { StyleSheet, css } from 'aphrodite';
 import LinkedIn from './LinkedIn';
 import GitHub from './GitHub';
 import CodeForThisSite from './CodeForThisSite';
+import Blog from './Blog';
 
 import {
    TABLET_PORTRAIT,
@@ -17,12 +18,15 @@ const styles = StyleSheet.create({
     lineHeight: '1.8',
     [TABLET_PORTRAIT]: {
     marginLeft: '30%',
+      color: 'pink',
     },
     [TABLET_LANDSCAPE]: {
     marginLeft: '30%',
+    color: 'blue',
     },
     [LAPTOPS]: {
-    marginLeft: '75%',
+    marginLeft: '60%',
+    color: 'orange',
     }
   },
   headerItem: {
@@ -33,6 +37,7 @@ const styles = StyleSheet.create({
 const Header = (props) => (
   <div className={css(styles.navContainer)}>
     <p className={css(styles.headerItem)}>{<CodeForThisSite/>}</p>
+    <p className={css(styles.headerItem)}>{<Blog/>}</p>
     <p className={css(styles.headerItem)}>{<LinkedIn/>}</p>
     <p className={css(styles.headerItem)}>{<GitHub/>}</p>
   </div>
