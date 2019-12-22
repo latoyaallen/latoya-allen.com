@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import OldBlog from './OldBlog';
 import OldGitHub from './OldGitHub';
 import BackEnd from './BackEnd';
 
@@ -52,7 +51,7 @@ const IntroText = () => (
   <div>
     <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
     <p className={css(styles.jobText)}>I'm a Front-End Developer based in Brooklyn, NY. I work in Functional JavaScript, React, Redux, Rails, Jest, Enzyme and RSpec  at Daily Kos. </p>
-    <p className={css(styles.mainText)}>I started of as a {<BackEnd />} in 2013 (my old {<OldBlog />} and {<OldGitHub/>}).  I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration. </p>
+    <p className={css(styles.mainText)}>I started of as a {<BackEnd />} in 2013 (my {<OldGitHub/>}).  I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration. </p>
     <p className={css(styles.mainText)}>If you'd like to know about my work, ask Janet below.</p>
   </div>
 )
