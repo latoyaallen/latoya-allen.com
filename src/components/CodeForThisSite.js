@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
 const CodeForThisSite = () => (
   <a
     className={css(styles.links)}
-    href="https://github.com/latoyaallen/latoya-allen.com"
+    href="https://www.ok-reboot.com"
     target="_blank"
     rel="noopener noreferrer">
-    Code For This Site
+    Ok-Reboot
   </a>
 );
 

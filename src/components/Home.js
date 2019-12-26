@@ -1,7 +1,7 @@
 import React from 'react'
-import Chat from './Chat';
 import Header from './Header';
 import IntroText from './IntroText';
+import Projects from './Projects';
 import { StyleSheet, css } from 'aphrodite';
 import {
   MOBILE_LANDSCAPE,
@@ -28,41 +28,12 @@ const styles = StyleSheet.create({
   links: {
     textDecoration: 'none',
   },
-  botContainer: {
-    marginLeft: '3%',
-    lineHeight: '1.8',
-    color: '#f28269',
-    [MOBILE_LANDSCAPE]: {
-      marginLeft: '20%',
-      paddingRight: '11%',
-      color: 'black',
-    },
-    [TABLET_PORTRAIT]: {
-      marginRight: '11.5%',
-      marginLeft: '30%',
-      color: 'pink',
-    },
-    [TABLET_LANDSCAPE]: {
-      marginRight: '11%',
-      marginLeft: '30%',
-      color: 'blue',
-    },
-    [LAPTOPS]: {
-      marginRight: '12%',
-      marginLeft: '40%',
-      color: 'green',
-    }
-  },
-
 });
 
 const Home = () => (
   <div>
     <Header />
     <IntroText />
-    <div className={css(styles.botContainer)}>
-      <Chat />
-    </div>
   </div>
 )
 
