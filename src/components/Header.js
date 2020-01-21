@@ -3,7 +3,6 @@ import { StyleSheet, css } from 'aphrodite';
 import LinkedIn from './LinkedIn';
 import GitHub from './GitHub';
 import OkReboot from './OkReboot';
-import OkAloe from './OkAloe';
 import Blog from './Blog';
 
 import {
@@ -38,7 +37,6 @@ const styles = StyleSheet.create({
 const Header = (props) => (
   <div className={css(styles.navContainer)}>
     <p className={css(styles.headerItem)}>{<OkReboot/>}</p>
-    <p className={css(styles.headerItem)}>{<OkAloe/>}</p>
     <p className={css(styles.headerItem)}>{<Blog/>}</p>
     <p className={css(styles.headerItem)}>{<LinkedIn/>}</p>
     <p className={css(styles.headerItem)}>{<GitHub/>}</p>
