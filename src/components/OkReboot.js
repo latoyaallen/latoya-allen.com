@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
 const OkReboot = () => (
   <a
     className={css(styles.links)}
-    href="https://www.ok-reboot.com"
+    href="https://met-costumes.herokuapp.com"
     target="_blank"
     rel="noopener noreferrer">
-    Ok-Reboot
+    Met Costumes
   </a>
 );
 
