@@ -4,19 +4,19 @@ import { StyleSheet, css } from 'aphrodite';
 const styles = StyleSheet.create({
   links: {
     textDecoration: 'none',
-    color: 'grey',
+    color: 'white',
     fontWeight: 'bold',
-    fontSize: 'large',
+    fontSize: '150%',
   },
 });
 
-const ProjectsLink = () => (
+const HomeLink = () => (
   <a
     className={css(styles.links)}
-    href="/projects"
+    href="/"
     rel="noopener noreferrer">
-    Projects
+    Home
   </a>
 );
 
-export default ProjectsLink;
+export default HomeLink;

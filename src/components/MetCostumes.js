@@ -16,7 +16,7 @@ const MetCostumes = () => (
     href="https://met-costumes.herokuapp.com"
     target="_blank"
     rel="noopener noreferrer">
-    Met Costumes
+    Met Costumes: A Simple Query to The Metropolitan Museum of Art Collection API
   </a>
 );
 
