@@ -5,17 +5,19 @@ const styles = StyleSheet.create({
   links: {
     textDecoration: 'none',
     color: 'grey',
+    fontWeight: 'bold',
+    fontSize: 'large',
   },
 });
 
-const OldGitHub = () => (
+const ProjectsLink = () => (
   <a
     className={css(styles.links)}
-    href="https://github.com/lna"
+    href="/projects"
     target="_blank"
     rel="noopener noreferrer">
-    old GitHub
+    Projects
   </a>
 );
 
-export default OldGitHub;
+export default ProjectsLink;
