@@ -6,6 +6,8 @@ import EmailMe from './EmailMe';
 
 const styles = StyleSheet.create({
   introText__container: {
+    maxWidth: '900px',
+    paddingTop: '5%',
   },
   nameText: {
     marginLeft: '12%',
@@ -14,10 +16,10 @@ const styles = StyleSheet.create({
     cursor: 'pointer',
     color: 'white',
     '@media (min-width: 600px)': {
-      marginLeft: '10%',
+      marginLeft: '30%',
     },
     '@media (min-width: 780px)': {
-      marginLeft: '9%',
+      marginLeft: '30%',
     }
   },
   header__text: {
@@ -25,13 +27,13 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 10,
     width: '75%',
-    color: 'white',
+    color: 'black',
     fontSize: '20px',
     '@media (min-width: 600px)': {
-      marginLeft: '10%',
+      marginLeft: '30%',
     },
     '@media (min-width: 780px)': {
-      marginLeft: '9%',
+      marginLeft: '30%',
     }
   },
   jobText: {
@@ -39,7 +41,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 10,
     width: '75%',
-    color: 'grey',
+    color: 'black',
     fontSize: '20px',
     '@media (min-width: 600px)': {
       marginLeft: '10%',
@@ -53,7 +55,7 @@ const styles = StyleSheet.create({
     width: '73%',
     marginTop: 40,
     marginBottom: 20,
-    color: 'grey',
+    color: 'black',
     fontSize: '20px',
     '@media (min-width: 600px)': {
       marginLeft: '10%',
@@ -67,9 +69,9 @@ const styles = StyleSheet.create({
 const IntroText = () => (
   <div className={css(styles.introText__container)}>
     <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
-    <p className={css(styles.header__text)}>I'm a front-end developer based in Brooklyn, NY. </p>
-    <p className={css(styles.header__text)}>I work in JavaScript, React, Redux, Rails, Jest, Enzyme and RSpec  at Daily Kos. </p>
-    <p className={css(styles.header__text)}>I started of as a {<BackEnd />} in 2013.  I enjoy working on small, impactful teams who care about clean code, utilizing testing frameworks, effective communication, and collaboration. </p>
+    <p className={css(styles.header__text)}>I'm a front-end developer based in Brooklyn, NY. I work in </p>
+    <p className={css(styles.header__text)}>JavaScript, React, Redux, Rails, Jest, Enzyme and RSpec  at Daily Kos. </p>
+    <p className={css(styles.header__text)}>I started of as a {<BackEnd />} in 2013. </p>
     <p className={css(styles.header__text)}>If you like art and APIs, take a look at this tiny thing I made: {<MetCostumes />}. </p>
     <p className={css(styles.header__text)}>Want to chat?  {<EmailMe />}. </p>
   </div>

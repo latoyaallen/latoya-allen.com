@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
   links: {
     textDecoration: 'none',
     color: 'grey',
+    fontWeight: 'bold',
   },
 });
 
