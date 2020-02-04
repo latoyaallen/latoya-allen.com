@@ -4,18 +4,18 @@ import { StyleSheet, css } from 'aphrodite';
 const styles = StyleSheet.create({
   links: {
     textDecoration: 'none',
-    color: 'orange',
+    color: 'grey',
   },
 });
 
-const CodeForThisSite = () => (
+const MetCostumes = () => (
   <a
     className={css(styles.links)}
-    href="https://www.ok-reboot.com"
+    href="https://met-costumes.herokuapp.com"
     target="_blank"
     rel="noopener noreferrer">
-    Ok-Reboot
+    Met Costumes
   </a>
 );
 
-export default CodeForThisSite;
+export default MetCostumes;

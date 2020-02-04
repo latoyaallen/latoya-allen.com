@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import LinkedIn from './LinkedIn';
 import GitHub from './GitHub';
-import OkReboot from './OkReboot';
+import MetCostumes from './MetCostumes';
 import Blog from './Blog';
 
 import {
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 
 const Header = (props) => (
   <div className={css(styles.navContainer)}>
-    <p className={css(styles.headerItem)}>{<OkReboot/>}</p>
+    <p className={css(styles.headerItem)}>{<MetCostumes/>}</p>
     <p className={css(styles.headerItem)}>{<Blog/>}</p>
     <p className={css(styles.headerItem)}>{<LinkedIn/>}</p>
     <p className={css(styles.headerItem)}>{<GitHub/>}</p>
