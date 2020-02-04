@@ -13,6 +13,7 @@ import {
 
 const styles = StyleSheet.create({
   navContainer: {
+    paddingTop: '10px',
     display: 'flex',
     marginLeft: '12%',
     lineHeight: '1.8',
@@ -25,12 +26,12 @@ const styles = StyleSheet.create({
     color: 'blue',
     },
     [LAPTOPS]: {
-    marginLeft: '60%',
+    marginLeft: '70%',
     color: 'orange',
     }
   },
   headerItem: {
-    marginRight: '9%',
+    marginRight: '5%',
   },
 });
 
