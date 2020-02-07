@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import LinkedIn from './LinkedIn';
 import GitHub from './GitHub';
 import ProjectsLink from './ProjectsLink';
 import Blog from './Blog';

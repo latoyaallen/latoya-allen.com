@@ -1,7 +1,5 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import BackEnd from './BackEnd';
-import MetCostumes from './MetCostumes';
 import EmailMe from './EmailMe';
 
 const styles = StyleSheet.create({
