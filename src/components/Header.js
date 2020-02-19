@@ -3,6 +3,7 @@ import { StyleSheet, css } from 'aphrodite';
 import GitHub from './GitHub';
 import ProjectsLink from './ProjectsLink';
 import Blog from './Blog';
+import LinkedIn from './LinkedIn';
 
 import {
    TABLET_PORTRAIT,
@@ -38,6 +39,7 @@ const Header = (props) => (
   <div className={css(styles.navContainer)}>
     <p className={css(styles.headerItem)}>{<ProjectsLink/>}</p>
     <p className={css(styles.headerItem)}>{<Blog/>}</p>
+    <p className={css(styles.headerItem)}>{<LinkedIn/>}</p>
     <p className={css(styles.headerItem)}>{<GitHub/>}</p>
   </div>
 );
