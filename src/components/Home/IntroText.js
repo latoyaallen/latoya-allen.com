@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import EmailMe from './EmailMe';
-import DailyKos from './DailyKos';
+import EmailMe from '../Links/EmailMe';
+import DailyKos from '../Links/DailyKos';
 
 const styles = StyleSheet.create({
   introText__container: {
