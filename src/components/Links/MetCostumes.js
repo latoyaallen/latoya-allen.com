@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 const MetCostumes = () => (
   <a
     className={css(styles.links)}
-    href="https://met-costumes.herokuapp.com"
+    href="/metcostumes"
     target="_blank"
     rel="noopener noreferrer">
     Met Costumes: A Simple Query to The Metropolitan Museum of Art Collection API

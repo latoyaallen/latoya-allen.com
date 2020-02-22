@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './Header';
+import './MetCostumes.css';
 //import CostumeGrid from 'CostumeGrid';
 
 const MetCostumes__center = {
   textAlign: 'center',
-  backgroundColor: 'black',
 }
 
 class MetCostumes extends React.Component {
@@ -35,9 +35,9 @@ class MetCostumes extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <Header />
-        <div style={MetCostumes__center}>
+        <div>
           It Gets Here
         </div>
       </div>

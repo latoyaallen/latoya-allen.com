@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Home/Home';
 import Header from './Header/Header';
 import Projects from './Projects/Projects';
+import MetCostumes from './MetCostumes/MetCostumes';
 
 class App extends React.Component {
   constructor(props) {
@@ -24,6 +25,9 @@ class App extends React.Component {
     if(pathname === 'home') {
       this.setState({view: 'home'});
     }
+    if(pathname === 'metcostumes') {
+      this.setState({view: 'metcostumes'});
+    }
   }
 
   render() {
@@ -37,6 +41,11 @@ class App extends React.Component {
     if(this.state.view === 'projects') {
       view =
       <Projects />
+    }
+
+    if(this.state.view === 'metcostumes') {
+      view =
+      <MetCostumes />
     }
 
     return (
