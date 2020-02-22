@@ -5,7 +5,7 @@ import DailyKos from './DailyKos';
 
 const styles = StyleSheet.create({
   introText__container: {
-    paddingTop: '5%',
+    paddingTop: '10%',
     marginLeft: '12%',
     '@media (min-width: 600px)': {
       marginLeft: '30%',
