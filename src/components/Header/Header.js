@@ -1,15 +1,15 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
-import GitHub from './GitHub';
-import ProjectsLink from './ProjectsLink';
-import Blog from './Blog';
-import LinkedIn from './LinkedIn';
+import ProjectsLink from '../Links/ProjectsLink';
+import Blog from '../Links/Blog';
+import LinkedIn from '../Links/LinkedIn';
+import GitHub from '../Links/GitHub';
 
 import {
    TABLET_PORTRAIT,
    TABLET_LANDSCAPE,
    LAPTOPS,
-} from '../lib/breakpoints';
+} from '../../lib/breakpoints';
 
 const styles = StyleSheet.create({
   navContainer: {
