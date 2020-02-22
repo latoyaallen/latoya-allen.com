@@ -1,11 +1,6 @@
 import React from 'react';
 import Header from './Header';
-//import CostumeGrid from 'CostumeGrid';
-
-const MetCostumes__container = {
-  // backgroundColor: 'black',
-  // height: '100vh',
-}
+import CostumeGrid from './CostumeGrid';
 
 class MetCostumes extends React.Component {
   constructor(props) {
@@ -32,11 +27,11 @@ class MetCostumes extends React.Component {
 
   render() {
     return (
-      <div style={MetCostumes__container}>
+      <div>
         <Header />
-        <div>
-          It Gets Here
-        </div>
+        <CostumeGrid
+          ids={this.state.ids}
+        />
       </div>
     );
   }

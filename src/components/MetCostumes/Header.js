@@ -3,6 +3,7 @@ import LinkToMainSite from '../Links/LinkToMainSite';
 
 const Header__text= {
   color: 'grey',
+    fontSize: '1.4em',
 }
 
 const Header__titleText= {
@@ -12,6 +13,7 @@ const Header__titleText= {
 const Header__instructionsText= {
   color: 'grey',
   fontStyle: 'oblique',
+  fontSize: '1.4em',
 }
 
 const Header__container = {

@@ -25,12 +25,12 @@ const styles = StyleSheet.create({
     }
   },
   header__text: {
+    fontSize: '1.9em',
     fontWeight: 'bold',
     marginTop: 20,
     marginBottom: 10,
     width: '75%',
     color: 'grey',
-    fontSize: '20px',
     '@media (min-width: 600px)': {
     },
     '@media (min-width: 780px)': {

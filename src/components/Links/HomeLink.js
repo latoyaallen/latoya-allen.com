@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     textDecoration: 'none',
     color: 'white',
     fontWeight: 'bold',
-    fontSize: '150%',
+    fontSize: '1.9em',
   },
 });
 
