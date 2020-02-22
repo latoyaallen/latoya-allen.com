@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home';
-import Header from './components/Header';
-import Projects from './components/Projects';
+import Home from './Home';
+import Header from './Header';
+import Projects from './Projects';
 
 class App extends React.Component {
   constructor(props) {
