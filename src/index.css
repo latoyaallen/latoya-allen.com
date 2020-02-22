@@ -1,6 +1,7 @@
 body {
-  background-color: #b4b4b4;
+  background-color: black;
   margin: 0;
+  overflow: hidden;
   font-family: "Begum-Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,3 +10,4 @@ body {
 code {
   font-family: Begum-Regular;
 }
+

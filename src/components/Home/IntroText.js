@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 10,
     width: '75%',
-    color: 'black',
+    color: 'grey',
     fontSize: '20px',
     '@media (min-width: 600px)': {
     },

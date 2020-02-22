@@ -35,12 +35,18 @@ class App extends React.Component {
 
     if(this.state.view === 'home') {
       view =
-      <Home />
+        <React.Fragment>
+          <Header />
+          <Home />
+        </React.Fragment>
     }
 
     if(this.state.view === 'projects') {
       view =
-      <Projects />
+        <React.Fragment>
+          <Header />
+          <Projects />
+        </React.Fragment>
     }
 
     if(this.state.view === 'metcostumes') {
@@ -50,7 +56,6 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header />
         {view}
       </div>
     );
