@@ -10,13 +10,13 @@ const styles = StyleSheet.create({
   },
 });
 
-const MetCostumes = () => (
+const MyRecords = () => (
   <a
     className={css(styles.links)}
-    href="/metcostumes"
+    href="/myrecordcollection"
     rel="noopener noreferrer">
-    Met Costumes: A Simple Query to The Metropolitan Museum of Art Collection API
+    My Record Collection
   </a>
 );
 
-export default MetCostumes;
+export default MyRecords;

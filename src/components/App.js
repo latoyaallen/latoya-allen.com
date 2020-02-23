@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import Header from './Header/Header';
 import Projects from './Projects/Projects';
 import MetCostumes from './MetCostumes/MetCostumes';
+import MyRecordCollection from './MyRecordCollection/MyRecordCollection';
 
 class App extends React.Component {
   constructor(props) {
@@ -27,6 +28,9 @@ class App extends React.Component {
     }
     if(pathname === 'metcostumes') {
       this.setState({view: 'metcostumes'});
+    }
+    if(pathname === 'myrecordcollection') {
+      this.setState({view: 'myrecordcollection'});
     }
   }
 
@@ -52,6 +56,11 @@ class App extends React.Component {
     if(this.state.view === 'metcostumes') {
       view =
       <MetCostumes />
+    }
+
+    if(this.state.view === 'myrecordcollection') {
+      view =
+      <MyRecordCollection />
     }
 
     return (

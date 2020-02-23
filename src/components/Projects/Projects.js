@@ -1,7 +1,7 @@
 import React from 'react';
 import MetCostumes from '../Links/MetCostumes'
 import HomeLink from '../Links/HomeLink'
-import MyRecords from '../Links/MyRecords'
+import MyRecordCollection from '../Links/MyRecordCollection'
 
 const projects__metCostumes = {
   textAlign: 'center',
@@ -19,7 +19,7 @@ const Projects = () => (
       <MetCostumes />
     </div>
     <div style={projects__homeLink}>
-      <MyRecords />
+      <MyRecordCollection />
     </div>
     <div style={projects__homeLink}>
       <HomeLink />
