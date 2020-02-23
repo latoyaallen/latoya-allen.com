@@ -1,5 +1,4 @@
 import React from 'react';
-import './AfroCubanJazz.css';
 import MongoSantamaria__workinOnAGroovyThing
  from '../../images/MongoSantamaria__workinOnAGroovyThing.png';
 

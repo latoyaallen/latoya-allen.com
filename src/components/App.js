@@ -47,10 +47,10 @@ class App extends React.Component {
 
     if(this.state.view === 'projects') {
       view =
-        <React.Fragment>
-          <Header />
-          <Projects />
-        </React.Fragment>
+      <React.Fragment>
+        <Header />
+        <Projects />
+      </React.Fragment>
     }
 
     if(this.state.view === 'metcostumes') {

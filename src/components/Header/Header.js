@@ -13,6 +13,7 @@ import {
 
 const styles = StyleSheet.create({
   navContainer: {
+    backgroundColor: '#b4b4b4',
     paddingTop: '10px',
     display: 'flex',
     marginLeft: '12%',

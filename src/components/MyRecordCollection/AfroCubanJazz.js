@@ -1,5 +1,4 @@
 import React from 'react';
-import './AfroCubanJazz.css';
 import AfroCubanJazzImage from './AfroCubanJazzImage';
 const AfroCubanJazz__container = {
   paddingTop: '11%',
