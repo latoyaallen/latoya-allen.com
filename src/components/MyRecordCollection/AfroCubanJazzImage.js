@@ -1,6 +1,6 @@
 import React from 'react';
-import MongoSantamaria__workinOnAGroovyThing
- from '../../images/MongoSantamaria__workinOnAGroovyThing.png';
+import DizzyG__AfroCuban
+ from '../../images/DizzyG__AfroCuban.png';
 
 const AfroCubanJazzImage__style = {
   paddingTop: '11%',
@@ -12,7 +12,7 @@ const AfroCubanJazzImage__style = {
 
 const AfroCubanJazzImage = (props) => (
   <div onScroll={props.onScroll}>
-    <img src={MongoSantamaria__workinOnAGroovyThing} style={AfroCubanJazzImage__style} id="image" alt="Vinyl" />
+    <img src={DizzyG__AfroCuban} style={AfroCubanJazzImage__style} id="image" alt="Vinyl" />
   </div>
 )
 

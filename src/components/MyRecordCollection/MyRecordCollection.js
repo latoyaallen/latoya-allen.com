@@ -18,7 +18,7 @@ class MyRecordCollection extends React.Component {
         <Title />
         <IntroQuote />
         <AfroCubanJazz />
-        <p style={IntroQuote__comingSoon}> coming soon-ish</p>
+        <p style={IntroQuote__comingSoon}> Under Construction</p>
       </div>
     )
   }
