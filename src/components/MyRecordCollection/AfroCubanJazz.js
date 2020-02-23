@@ -14,11 +14,32 @@ const AfroCubanJazz__text = {
   margin: 0,
 }
 
-const AfroCubanJazz = (props) => (
-  <div style={AfroCubanJazz__container} onScroll={props.onScroll}>
-    <p style={AfroCubanJazz__text}>Afro Cuban Jazz</p>
-    <AfroCubanJazzImage />
-  </div>
-)
+class AfroCubanJazz extends React.Component {
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(e) {
+    e.preventDefault();
+    var image = document.getElementById("image");
+    image.style.transform = "rotate("+window.pageYOffset+"deg)";
+    //image.style.transform = "scale(1,3)";
+    console.log("it gets here");
+  }
+  render() {
+    return (
+      <div style={AfroCubanJazz__container}>
+        <p style={AfroCubanJazz__text}>Afro Cuban Jazz</p>
+        <AfroCubanJazzImage
+          onScroll={this.handleScroll}
+        />
+      </div>
+    )
+  }
+}
 
 export default AfroCubanJazz;

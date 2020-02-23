@@ -10,8 +10,8 @@ const AfroCubanJazzImage__style = {
   width: '50%',
 }
 
-const AfroCubanJazzImage = () => (
-  <div>
+const AfroCubanJazzImage = (props) => (
+  <div onScroll={props.onScroll}>
     <img src={MongoSantamaria__workinOnAGroovyThing} style={AfroCubanJazzImage__style} id="image" alt="Vinyl" />
   </div>
 )
