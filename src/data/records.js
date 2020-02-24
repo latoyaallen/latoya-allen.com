@@ -4,6 +4,8 @@ import Kendrick__untitled
  from '../images/Kendrick__untitled.png';
 import Solange__aSeat
  from '../images/Solange__aSeat.png';
+import Nirvana__MTV
+ from '../images/Nirvana__MTV.png';
 
 const records = [
   {
@@ -35,6 +37,16 @@ const records = [
     "src": "https://www.youtube.com/embed/UQeql3Wjogs",
     "category":"Neo Soul, Funk, R&B",
     "img": Solange__aSeat,
+  },
+  {
+    "id":"4",
+    "title": "Nirvana: MTV Unplugged in New York",
+    "location": "Recorded at Sony Music Studios in New York",
+    "day": "November 18th",
+    "year": "1993",
+    "src": "https://www.youtube.com/embed/fregObNcHC8",
+    "category":"Folk Rock, Acoustic, Grunge",
+    "img": Nirvana__MTV,
   },
 ]
 
