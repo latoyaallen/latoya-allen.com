@@ -13,9 +13,9 @@ const Title__text = {
   margin: 0,
 }
 
-const Title = () => (
+const Title = (props) => (
   <div style={Title__container}>
-    <p style={Title__text}>My Record Collection</p>
+    <p style={Title__text}>{props.title}</p>
   </div>
 )
 

@@ -2,7 +2,7 @@ import React from 'react';
 import DizzyG__AfroCuban
  from '../../images/DizzyG__AfroCuban.png';
 
-const AfroCubanJazzImage__style = {
+const Image__style = {
   paddingTop: '11%',
   display: 'block',
   marginLeft: 'auto',
@@ -10,10 +10,10 @@ const AfroCubanJazzImage__style = {
   width: '50%',
 }
 
-const AfroCubanJazzImage = (props) => (
+const Image = (props) => (
   <div onScroll={props.onScroll}>
-    <img src={DizzyG__AfroCuban} style={AfroCubanJazzImage__style} id="image" alt="Vinyl" />
+    <img src={DizzyG__AfroCuban} style={Image__style} id="image" alt="Vinyl" />
   </div>
 )
 
-export default AfroCubanJazzImage;
+export default Image;

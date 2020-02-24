@@ -1,10 +1,9 @@
 import React from 'react'
 
 const videoContainer = {
-  paddingTop: '13%',
+  paddingTop: '2%',
   paddingLeft: '3%',
 }
-
 
 const YouTubeIFrame = (props) => (
   <div style={videoContainer}>
