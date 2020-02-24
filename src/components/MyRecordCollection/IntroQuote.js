@@ -8,30 +8,35 @@ import {
 } from '../../lib/breakpoints';
 
 const styles = StyleSheet.create({
-  Quote__container: {
+  IntroQuote__container: {
     [MOBILE_LANDSCAPE]: {
+      paddingTop: '20%',
+      paddingRight: '3%',
+      paddingLeft: '3%',
     },
     [TABLET_PORTRAIT]: {
-      paddingBottom: '11%',
+      paddingTop: '20%',
+      paddingRight: '5%',
+      paddingLeft: '5%',
     },
     [TABLET_LANDSCAPE]: {
-      paddingBottom: '11%',
+      paddingTop: '20%',
+      paddingRight: '11%',
+      paddingLeft: '11%',
     },
     [LAPTOPS]: {
-      display: 'flex',
-      paddingBottom: '11%',
       paddingTop: '20%',
       paddingRight: '11%',
       paddingLeft: '11%',
     }
   },
-  Quote__text: {
+  IntroQuote__text: {
     fontSize: '7.4em',
     color: 'white',
     textAlign: 'center',
     margin: 0,
     [MOBILE_LANDSCAPE]: {
-      fontSize: '2.4em',
+      fontSize: '4.0em',
     },
     [TABLET_PORTRAIT]: {
       fontSize: '7.4em',
@@ -40,19 +45,18 @@ const styles = StyleSheet.create({
       fontSize: '7.4em',
     },
     [LAPTOPS]: {
-      marginLeft: '3%',
       fontSize: '7.4em',
     }
   },
 
-  Quote__textAttribution: {
+  IntroQuote__attribution: {
     paddingTop: '11%',
     fontSize: '3.4em',
     color: 'white',
     textAlign: 'center',
     margin: 0,
     [MOBILE_LANDSCAPE]: {
-      fontSize: '2.0em',
+      fontSize: '3.4em',
     },
     [TABLET_PORTRAIT]: {
       fontSize: '3.4em',
@@ -66,31 +70,11 @@ const styles = StyleSheet.create({
     }
   },
 });
-const IntroQuote__container = {
-  paddingTop: '20%',
-  paddingRight: '11%',
-  paddingLeft: '11%',
-}
-
-const IntroQuote__text = {
-  fontSize: '7.4em',
-  color: 'white',
-  textAlign: 'center',
-  margin: 0,
-}
-
-const IntroQuote__attribution= {
-  paddingTop: '11%',
-  fontSize: '3.4em',
-  color: 'white',
-  textAlign: 'center',
-  margin: 0,
-}
 
 const IntroQuote = () => (
-  <div style={IntroQuote__container}>
-    <p style={IntroQuote__text}>The two things you can't fake are good food and good music.</p>
-    <p style={IntroQuote__attribution}>Etta James</p>
+  <div className={css(styles.IntroQuote__container)}>
+    <p className={css(styles.IntroQuote__text)}>The two things you can't fake are good food and good music.</p>
+    <p className={css(styles.IntroQuote__attribution)}>Etta James</p>
   </div>
 )
 
