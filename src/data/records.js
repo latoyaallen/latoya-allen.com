@@ -2,6 +2,8 @@ import DizzyG__AfroCuban
  from '../images/DizzyG__AfroCuban.png';
 import Kendrick__untitled
  from '../images/Kendrick__untitled.png';
+import Solange__aSeat
+ from '../images/Solange__aSeat.png';
 
 const records = [
   {
@@ -17,13 +19,23 @@ const records = [
   {
     "id":"2",
     "title": "Kendrick Lamar: Untitled Unmastered.",
-    "location": "Recorded at The Colbert Report, The Tonight Show, and The Grammys",
+    "location": "Partially recorded at The Colbert Report, The Tonight Show, and The Grammys",
     "day": "Spring, Summer, and Fall",
     "year": "2013 & 2014",
-    "src": "https://www.youtube.com/embed/o4M4qssoaWU",
+    "src": "https://www.youtube.com/embed/cziv-WGRLcE",
     "category":"Hip Hop",
     "img": Kendrick__untitled,
-  }
+  },
+  {
+    "id":"3",
+    "title": "Solange: A Seat At The Table",
+    "location": "Primarliy recorded in Iberia, Louisiana",
+    "day": "",
+    "year": "",
+    "src": "https://www.youtube.com/embed/UQeql3Wjogs",
+    "category":"Neo Soul, Funk, R&B",
+    "img": Solange__aSeat,
+  },
 ]
 
 
