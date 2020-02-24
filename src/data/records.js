@@ -48,6 +48,16 @@ const records = [
     "category":"Folk Rock, Acoustic, Grunge",
     "img": Nirvana__MTV,
   },
+  {
+    "id":"5",
+    "title": "Betty Davis: They Say I'm Different",
+    "location": "",
+    "day": "",
+    "year": "",
+    "src": "https://www.youtube.com/embed/EKWPynScqgw",
+    "category":"Rock, Funk, Soul, Blues, ",
+    "img": Nirvana__MTV,
+  },
 ]
 
 
