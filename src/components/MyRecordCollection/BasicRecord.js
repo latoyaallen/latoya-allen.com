@@ -2,7 +2,7 @@ import React from 'react';
 import Image from './Image';
 import Title from './Title';
 import RecordingDetails from './RecordingDetails';
-import Media from './Media';
+import YouTubeIFrame from './YouTubeIFrame';
 
 const BasicRecord__container = {
   paddingTop: '11%',
@@ -28,7 +28,6 @@ class BasicRecord extends React.Component {
     e.preventDefault();
     const image = document.getElementById("image");
     const title = document.getElementById("BasicRecord__title");
-
     const titleLocation = title.getBoundingClientRect();
 
     //
@@ -38,7 +37,7 @@ class BasicRecord extends React.Component {
     // reset the image to its original location
     //
 
-    if (titleLocation.top < - 600  && titleLocation.top > - 1150) {
+    if (titleLocation.top < - 600 && titleLocation.top > - 1150) {
       image.style.transform = "rotate("+window.pageYOffset+"deg)";
     } else {
       image.style.transform = "rotate(0deg)";
@@ -60,12 +59,11 @@ class BasicRecord extends React.Component {
           day={"June 4 & 5"}
           year={"1975"}
         />
-        <Media
-          text={"'It adds up to a paltry 32 minutes of music, yet one can forgive the short length, this being all there is of a historic recording session.' ~ Richard S. Ginell"}
-          src={"https://www.youtube.com/embed/kBUjYwDC2oA"}
-          height={550}
-          width={650}
+        <YouTubeIFrame
           title={"Dizzy Gillespie - Oro, Incienso y Mirra"}
+          height={550}
+          width={550}
+          src={"https://www.youtube.com/embed/kBUjYwDC2oA"}
         />
       </div>
     )

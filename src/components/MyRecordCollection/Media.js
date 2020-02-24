@@ -1,22 +1,33 @@
 import React from 'react';
+import { StyleSheet, css } from 'aphrodite';
+import {
+  MOBILE_LANDSCAPE,
+  TABLET_PORTRAIT,
+  TABLET_LANDSCAPE,
+  LAPTOPS,
+} from '../../lib/breakpoints';
+
 import YouTubeIFrame from './YouTubeIFrame';
 
-const Media__container = {
-  display: 'flex',
-  paddingBottom: '11%',
-}
-
-const Media__text = {
-  paddingBottom: '11%',
-  fontSize: '4.4em',
-  color: 'white',
-  textAlign: 'center',
-  margin: 0,
-}
+const styles = StyleSheet.create({
+  Media__container: {
+    paddingBottom: '11%',
+    [MOBILE_LANDSCAPE]: {
+    },
+    [TABLET_PORTRAIT]: {
+      paddingBottom: '11%',
+    },
+    [TABLET_LANDSCAPE]: {
+      paddingBottom: '11%',
+    },
+    [LAPTOPS]: {
+      paddingBottom: '11%',
+    }
+  },
+});
 
 const Media = (props) => (
-  <div style={Media__container}>
-    <p style={Media__text}>{props.text}</p>
+  <div className={css(styles.Media__container)}>
     <YouTubeIFrame
       src={props.src}
       height={props.height}

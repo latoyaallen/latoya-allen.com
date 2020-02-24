@@ -6,9 +6,9 @@ import LinkedIn from '../Links/LinkedIn';
 import GitHub from '../Links/GitHub';
 
 import {
-   TABLET_PORTRAIT,
-   TABLET_LANDSCAPE,
-   LAPTOPS,
+  TABLET_PORTRAIT,
+  TABLET_LANDSCAPE,
+  LAPTOPS,
 } from '../../lib/breakpoints';
 
 const styles = StyleSheet.create({
