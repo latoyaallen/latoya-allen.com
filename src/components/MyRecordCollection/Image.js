@@ -1,6 +1,4 @@
 import React from 'react';
-import DizzyG__AfroCuban
- from '../../images/DizzyG__AfroCuban.png';
 
 const Image__style = {
   paddingTop: '11%',
@@ -12,7 +10,7 @@ const Image__style = {
 
 const Image = (props) => (
   <div onScroll={props.onScroll}>
-    <img src={DizzyG__AfroCuban} style={Image__style} id="image" alt="Vinyl" />
+    <img src={props.img} style={Image__style} id="image" alt="Vinyl" />
   </div>
 )
 

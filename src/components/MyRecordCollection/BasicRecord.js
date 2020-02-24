@@ -48,22 +48,23 @@ class BasicRecord extends React.Component {
       <div style={BasicRecord__container}>
         <div style={BasicRecord__title} id="BasicRecord__title">
           <Title
-            title={"Dizzy Gillespie Y Machito: Afro-Cuban Jazz Moods"}
+            title={this.props.title}
           />
         </div>
         <Image
+          img={this.props.img}
           onScroll={this.handleScroll}
         />
         <RecordingDetails
-          location={"Recorded at Generation Studios, New York"}
-          day={"June 4 & 5"}
-          year={"1975"}
+          location={this.props.location}
+          day={this.props.day}
+          year={this.props.year}
         />
         <YouTubeIFrame
-          title={"Dizzy Gillespie - Oro, Incienso y Mirra"}
+          title={this.props.title}
           height={550}
           width={550}
-          src={"https://www.youtube.com/embed/kBUjYwDC2oA"}
+          src={this.props.src}
         />
       </div>
     )

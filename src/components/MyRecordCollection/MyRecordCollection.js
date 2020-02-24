@@ -1,7 +1,8 @@
 import React from 'react';
 import Title from './Title';
 import IntroQuote from './IntroQuote';
-import BasicRecord from './BasicRecord';
+import VisibleRecords from './VisibleRecords';
+import records from '../../data/records';
 
 class MyRecordCollection extends React.Component {
   render() {
@@ -11,7 +12,9 @@ class MyRecordCollection extends React.Component {
           title={"My Record Collection"}
         />
         <IntroQuote />
-        <BasicRecord />
+        <VisibleRecords
+          records={records}
+        />
       </div>
     )
   }
