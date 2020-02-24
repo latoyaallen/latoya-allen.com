@@ -51,12 +51,12 @@ const records = [
   {
     "id":"5",
     "title": "Betty Davis: They Say I'm Different",
-    "location": "",
+    "location": "Recorded on The West Coast",
     "day": "",
-    "year": "",
+    "year": "1972 & 1973",
     "src": "https://www.youtube.com/embed/EKWPynScqgw",
     "category":"Rock, Funk, Soul, Blues, ",
-    "img": Nirvana__MTV,
+    "img": "",
   },
 ]
 
