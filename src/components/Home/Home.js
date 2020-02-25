@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
       marginLeft: '30%',
     }
   },
-  nameText: {
+  Home__nameText: {
     marginTop: 10,
     marginBottom: 20,
     cursor: 'pointer',
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
 
 const Home = () => (
   <div className={css(styles.Home__container)}>
-    <h1 className={css(styles.nameText)}> Hi, I'm LaToya.</h1>
+    <h1 className={css(styles.Home__nameText)}> Hi, I'm LaToya.</h1>
     <p className={css(styles.Home__text)}>I'm a front-end developer based in Brooklyn, NY.</p>
     <p className={css(styles.Home__text)}>I work in React, Redux, Rails, Jest, Enzyme and RSpec at {<DailyKos/>}. </p>
     <p className={css(styles.Home__text)}>Want to chat?  {<EmailMe />}.</p>

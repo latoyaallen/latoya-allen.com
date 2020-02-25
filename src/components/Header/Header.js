@@ -13,7 +13,7 @@ import {
 } from '../../lib/breakpoints';
 
 const styles = StyleSheet.create({
-  navContainer: {
+  Header__container: {
     paddingTop: '10px',
     display: 'flex',
     marginLeft: '12%',
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
 });
 
 const Header = (props) => (
-  <div className={css(styles.navContainer)}>
+  <div className={css(styles.Header__container)}>
     <p className={css(styles.Header__item)}>{<ProjectsLink/>}</p>
     <p className={css(styles.Header__item)}>{<LinkedIn/>}</p>
     <p className={css(styles.Header__item)}>{<GitHub/>}</p>

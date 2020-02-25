@@ -4,8 +4,9 @@ import HomeLink from '../Links/HomeLink'
 import MyRecordCollection from '../Links/MyRecordCollection'
 
 const Projects__projectLink = {
-  textAlign: 'center',
-  paddingTop: '5%',
+  paddingTop: '10%',
+  marginLeft: '12%',
+  marginRight: '12%',
 }
 
 const Projects = () => (
