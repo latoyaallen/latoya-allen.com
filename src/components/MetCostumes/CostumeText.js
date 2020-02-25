@@ -11,6 +11,8 @@ const costumeText__linkStyle = {
 const costumeText__linkText = {
   color: 'grey',
   align: 'center',
+  fontSize: '1.8em',
+
 }
 
 const CostumeText = (props) => (

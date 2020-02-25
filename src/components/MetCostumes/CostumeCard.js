@@ -6,7 +6,7 @@ const costumeCard__border = {
   paddingTop: '5%',
   paddingBottom: '5%',
   borderTop: '1px solid grey',
-  width: '70%',
+  width: '100%',
 }
 
 

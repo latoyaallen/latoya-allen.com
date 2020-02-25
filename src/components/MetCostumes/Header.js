@@ -1,23 +1,23 @@
 import React from 'react';
 import LinkToMainSite from '../Links/LinkToMainSite';
 
-const Header__text= {
-  color: 'grey',
-    fontSize: '1.4em',
+const Header__container = {
+  paddingLeft: '5%',
 }
 
 const Header__titleText= {
   color: '#b4b4b4',
 }
 
+const Header__text= {
+  color: 'grey',
+  fontSize: '1.4em',
+}
+
 const Header__instructionsText= {
   color: 'grey',
   fontStyle: 'oblique',
   fontSize: '1.4em',
-}
-
-const Header__container = {
-  paddingLeft: '3%',
 }
 
 const Header = (props) => (
