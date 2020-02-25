@@ -17,19 +17,23 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 0,
     [MOBILE_PORTRAIT]: {
-    fontSize: '3.4em',
+      textAlign: 'left',
+      paddingTop: '21%',
+      paddingBottom: '31%',
+      paddingLeft: '5%',
+      fontSize: '1.5em',
     },
     [MOBILE_LANDSCAPE]: {
-    fontSize: '5.4em',
+      fontSize: '5.4em',
     },
     [TABLET_PORTRAIT]: {
-    fontSize: '7.4em',
+      fontSize: '7.4em',
     },
     [TABLET_LANDSCAPE]: {
-    fontSize: '7.4em',
+      fontSize: '7.4em',
     },
     [LAPTOPS]: {
-    fontSize: '7.4em',
+      fontSize: '7.4em',
     }
   },
   RecordingDetails__text: {

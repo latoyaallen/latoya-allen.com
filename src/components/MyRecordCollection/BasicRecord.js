@@ -64,8 +64,8 @@ class BasicRecord extends React.Component {
         />
         <YouTubeIFrame
           title={this.props.title}
-          height={550}
-          width={550}
+          height={250}
+          width={300}
           src={this.props.src}
         />
       </div>

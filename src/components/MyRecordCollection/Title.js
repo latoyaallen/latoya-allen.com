@@ -34,7 +34,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 0,
     [MOBILE_PORTRAIT]: {
-      fontSize: '4.0em',
+      paddingLeft: '5%',
+      textAlign: 'left',
+      fontSize: '3.0em',
     },
     [MOBILE_LANDSCAPE]: {
       fontSize: '6.0em',

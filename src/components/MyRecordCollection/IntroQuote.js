@@ -11,7 +11,7 @@ import {
 const styles = StyleSheet.create({
   IntroQuote__container: {
     [MOBILE_PORTRAIT]: {
-      paddingTop: '20%',
+      paddingTop: '25%',
       paddingRight: '3%',
       paddingLeft: '3%',
     },
@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 0,
     [MOBILE_PORTRAIT]: {
-      fontSize: '4.0em',
+      paddingTop: '11%',
+      fontSize: '2.0em',
     },
     [MOBILE_LANDSCAPE]: {
       fontSize: '4.0em',
@@ -64,6 +65,11 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     margin: 0,
+    [MOBILE_PORTRAIT]: {
+      fontSize: '1.4em',
+      paddingTop: '21%',
+      paddingBottom: '11%',
+    },
     [MOBILE_LANDSCAPE]: {
       fontSize: '3.4em',
     },
