@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import {
+  MOBILE_PORTRAIT,
   MOBILE_LANDSCAPE,
   TABLET_PORTRAIT,
   TABLET_LANDSCAPE,
@@ -10,6 +11,8 @@ import {
 const styles = StyleSheet.create({
   Title__container: {
     paddingTop: '11%',
+    [MOBILE_PORTRAIT]: {
+    },
     [MOBILE_LANDSCAPE]: {
     },
     [TABLET_PORTRAIT]: {
@@ -30,6 +33,9 @@ const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     margin: 0,
+    [MOBILE_PORTRAIT]: {
+      fontSize: '4.0em',
+    },
     [MOBILE_LANDSCAPE]: {
       fontSize: '6.0em',
     },

@@ -35,6 +35,8 @@ class BasicRecord extends React.Component {
     // rotate the image on scroll
     // else
     // reset the image to its original location
+    // it's the reset of the image
+    // that gives the animation a cool 'snap' feel
     //
 
     if (titleLocation.top < - 600 && titleLocation.top > - 1150) {
