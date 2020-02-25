@@ -31,7 +31,7 @@ class BasicRecord extends React.Component {
     const titleLocation = title.getBoundingClientRect();
 
     //
-    // if we have entered the Afro Cuban Jazz section,
+    // if we have loaded the first record,
     // rotate the image on scroll
     // else
     // reset the image to its original location
