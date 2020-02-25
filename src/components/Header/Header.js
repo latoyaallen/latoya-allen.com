@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import ProjectsLink from '../Links/ProjectsLink';
-import Blog from '../Links/Blog';
 import LinkedIn from '../Links/LinkedIn';
 import GitHub from '../Links/GitHub';
 
 import {
+  MOBILE_PORTRAIT,
+  MOBILE_LANDSCAPE,
   TABLET_PORTRAIT,
   TABLET_LANDSCAPE,
   LAPTOPS,
@@ -17,30 +18,41 @@ const styles = StyleSheet.create({
     display: 'flex',
     marginLeft: '12%',
     lineHeight: '1.8',
+    [MOBILE_PORTRAIT]: {
+    },
+    [MOBILE_LANDSCAPE]: {
+    marginLeft: '12%',
+    },
     [TABLET_PORTRAIT]: {
-    marginLeft: '30%',
-      color: 'pink',
+      marginLeft: '30%',
     },
     [TABLET_LANDSCAPE]: {
-    marginLeft: '30%',
-    color: 'blue',
+      marginLeft: '30%',
     },
     [LAPTOPS]: {
-    marginLeft: '70%',
-    color: 'orange',
+      marginLeft: '70%',
     }
   },
-  headerItem: {
+  Header__item: {
     marginRight: '5%',
+    [MOBILE_PORTRAIT]: {
+    },
+    [MOBILE_LANDSCAPE]: {
+    },
+    [TABLET_PORTRAIT]: {
+    },
+    [TABLET_LANDSCAPE]: {
+    },
+    [LAPTOPS]: {
+    }
   },
 });
 
 const Header = (props) => (
   <div className={css(styles.navContainer)}>
-    <p className={css(styles.headerItem)}>{<ProjectsLink/>}</p>
-    <p className={css(styles.headerItem)}>{<Blog/>}</p>
-    <p className={css(styles.headerItem)}>{<LinkedIn/>}</p>
-    <p className={css(styles.headerItem)}>{<GitHub/>}</p>
+    <p className={css(styles.Header__item)}>{<ProjectsLink/>}</p>
+    <p className={css(styles.Header__item)}>{<LinkedIn/>}</p>
+    <p className={css(styles.Header__item)}>{<GitHub/>}</p>
   </div>
 );
 

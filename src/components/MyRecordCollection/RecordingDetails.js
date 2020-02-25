@@ -50,15 +50,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const RecordingDetails__container = {
-  paddingTop: '11%',
-  paddingBottom: '11%',
-  fontSize: '7.4em',
-  color: 'white',
-  textAlign: 'center',
-  margin: 0,
-}
-
 const RecordingDetails = (props) => (
   <div className={css(styles.RecordingDetails__container)}>
     <p>{props.location}</p>

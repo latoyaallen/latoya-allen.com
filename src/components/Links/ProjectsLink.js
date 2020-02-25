@@ -4,8 +4,8 @@ import { StyleSheet, css } from 'aphrodite';
 const styles = StyleSheet.create({
   links: {
     textDecoration: 'none',
-    color: 'grey',
     fontWeight: 'bold',
+    color: '#40c7c7',
     fontSize: '1.4em',
   },
 });

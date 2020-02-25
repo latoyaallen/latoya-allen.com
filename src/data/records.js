@@ -58,6 +58,16 @@ const records = [
     "category":"Rock, Funk, Soul, Blues, ",
     "img": "",
   },
+  {
+    "id":"6",
+    "title": "Prince",
+    "location": "Ever",
+    "day": "Album",
+    "year": "I Can Find",
+    "src": "https://www.youtube.com/watch?v=hAzzRQe6lms",
+    "category":"Rock, Funk, Soul, Blues, Soundtrack, Hip Hop",
+    "img": "",
+  },
 ]
 
 
