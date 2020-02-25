@@ -6,6 +6,10 @@ import Solange__aSeat
  from '../images/Solange__aSeat.png';
 import Nirvana__MTV
  from '../images/Nirvana__MTV.png';
+import BettyDavis__TheySay
+ from '../images/BettyDavis__TheySay.png';
+import Prince__Under
+ from '../images/Prince__Under.png';
 
 const records = [
   {
@@ -27,6 +31,16 @@ const records = [
     "src": "https://www.youtube.com/embed/cziv-WGRLcE",
     "category":"Hip Hop",
     "img": Kendrick__untitled,
+  },
+  {
+    "id":"6",
+    "title": "Prince",
+    "location": "Every",
+    "day": "Album",
+    "year": "I Can Find",
+    "src": "https://www.youtube.com/embed/hAzzRQe6lms",
+    "category":"All",
+    "img": Prince__Under,
   },
   {
     "id":"3",
@@ -56,18 +70,9 @@ const records = [
     "year": "1972 & 1973",
     "src": "https://www.youtube.com/embed/EKWPynScqgw",
     "category":"Rock, Funk, Soul, Blues, ",
-    "img": "",
+    "img": BettyDavis__TheySay,
   },
-  {
-    "id":"6",
-    "title": "Prince",
-    "location": "Ever",
-    "day": "Album",
-    "year": "I Can Find",
-    "src": "https://www.youtube.com/watch?v=hAzzRQe6lms",
-    "category":"Rock, Funk, Soul, Blues, Soundtrack, Hip Hop",
-    "img": "",
-  },
+  // id 6 is Prince; moved up playlist
 ]
 
 
