@@ -1,6 +1,6 @@
 import React from 'react';
 
-const costumeText__linkStyle = {
+const CostumeText__linkStyle = {
   cursor: 'pointer',
   textDecoration: 'none',
   color: 'white',
@@ -8,7 +8,7 @@ const costumeText__linkStyle = {
   fontWeight: 'bold',
 }
 
-const costumeText__linkText = {
+const CostumeText__linkText = {
   color: 'grey',
   align: 'center',
   fontSize: '1.8em',
@@ -17,9 +17,9 @@ const costumeText__linkText = {
 
 const CostumeText = (props) => (
   <div>
-    <div style={costumeText__linkText}>
+    <div style={CostumeText__linkText}>
       <a
-        style={costumeText__linkStyle}
+        style={CostumeText__linkStyle}
         href={props.url}
         target="_blank"
         rel="noopener noreferrer">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const videoContainer = {
+const YouTubeIFrame__container = {
   paddingBottom: '11%',
 }
 
@@ -9,7 +9,7 @@ const YouTubeIFrame__center ={
 }
 
 const YouTubeIFrame = (props) => (
-  <div style={videoContainer}>
+  <div style={YouTubeIFrame__container}>
     <p style={YouTubeIFrame__center}>
     <iframe
       src={props.src}

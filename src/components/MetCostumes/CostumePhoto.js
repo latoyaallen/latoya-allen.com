@@ -1,19 +1,19 @@
 import React from 'react';
 
-const costumePhoto__wrapper = {
+const CostumePhoto__wrapper = {
   align: 'center',
   paddingBottom: '10px',
 }
 
-const costumePhoto = {
+const CostumePhoto__img = {
   maxHeight: '350px',
   maxWidth: '250px',
   align: 'center',
 }
 
 const CostumePhoto = (props) => (
-  <div style={costumePhoto__wrapper}>
-    <img style={costumePhoto} src={props.primaryImageUrl} alt="Oops! Where did the costume go?" />
+  <div style={CostumePhoto__wrapper}>
+    <img style={CostumePhoto__img} src={props.primaryImageUrl} alt="Oops! Where did the costume go?" />
   </div>
 );
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import CostumeCard from './CostumeCard';
 
-const visiblePhotoGrid__container = {
+const VisiblePhotoGrid__container = {
   paddingTop: '20px',
   textAlign: 'center',
 }
 
 const VisibleCostumeGrid = (props) => (
-  <div style={visiblePhotoGrid__container}>
+  <div style={VisiblePhotoGrid__container}>
     {props.costumes.map(d => (
       <div key={d.id}>
         <CostumeCard

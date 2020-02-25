@@ -2,7 +2,7 @@ import React from 'react';
 import CostumeText from './CostumeText';
 import CostumePhoto from './CostumePhoto';
 
-const costumeCard__border = {
+const CostumeCard__border = {
   paddingTop: '5%',
   paddingBottom: '5%',
   borderTop: '1px solid grey',
@@ -11,7 +11,7 @@ const costumeCard__border = {
 
 
 const CostumeCard = (props) => (
-  <div style={costumeCard__border}>
+  <div style={CostumeCard__border}>
     <CostumePhoto
       primaryImageUrl={props.primaryImageUrl}
     />
