@@ -21,7 +21,7 @@ const records = [
   {
     "id":"2",
     "title": "Kendrick Lamar: Untitled Unmastered.",
-    "location": "Partially recorded at The Colbert Report, The Tonight Show, and The Grammys",
+    "location": "Some of this album was recorded live at The Colbert Report, The Tonight Show, and The Grammys",
     "day": "Spring, Summer, and Fall",
     "year": "2013 & 2014",
     "src": "https://www.youtube.com/embed/cziv-WGRLcE",
@@ -31,7 +31,7 @@ const records = [
   {
     "id":"3",
     "title": "Solange: A Seat At The Table",
-    "location": "Primarliy recorded in Iberia, Louisiana",
+    "location": "Most of this album was recorded in Iberia, Louisiana",
     "day": "",
     "year": "",
     "src": "https://www.youtube.com/embed/UQeql3Wjogs",
