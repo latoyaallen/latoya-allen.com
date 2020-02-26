@@ -15,7 +15,7 @@ const MetCostumes = () => (
     className={css(styles.links)}
     href="/metcostumes"
     rel="noopener noreferrer">
-    Met Costumes: A Simple Query to The Metropolitan Museum of Art Collection API
+    Met Costumes
   </a>
 );
 
