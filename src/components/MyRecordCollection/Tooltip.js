@@ -11,9 +11,16 @@ import {
 
 const styles = StyleSheet.create({
   Tootlip__container: {
+    cursor: 'pointer',
+    position: 'absolute',
+    right: 40,
     [MOBILE_PORTRAIT]: {
+    right: 20,
     },
     [MOBILE_LANDSCAPE]: {
+      cursor: 'pointer',
+      position: 'absolute',
+      left: 40,
     },
     [TABLET_PORTRAIT]: {
     },
@@ -25,9 +32,9 @@ const styles = StyleSheet.create({
   Tootlip__circle: {
     height: '25px',
     width: '25px',
-    backgroundColor: 'blue',
-    borderRadius: '50%',;
-    display: 'inline-block',
+    backgroundColor: '#40c7c7',
+    borderRadius: '50%',
+
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
@@ -43,7 +50,7 @@ const styles = StyleSheet.create({
 
 const Tootlip = (props) => (
   <div className={css(styles.Tootlip__container)}>
-    <p className={css(styles.Tootlip__circle)}>By Category</p>
+    <p className={css(styles.Tootlip__circle)}></p>
   </div>
 );
 

@@ -17,7 +17,7 @@ const records = [
   {
     "id":"7",
     "title": "James Brown: Live At The Apollo",
-    "location": "Recordrd at The Apollo Theater, New York",
+    "location": "Recorded in Harlem, New York",
     "day": "October 24th",
     "year": "1962",
     "src": "https://www.youtube.com/embed/vruy2GRUsV8",
