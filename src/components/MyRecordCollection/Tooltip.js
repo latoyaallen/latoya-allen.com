@@ -9,20 +9,15 @@ import {
   LAPTOPS,
 } from '../../lib/breakpoints';
 
+import TooltipCircle from './TooltipCircle';
+
 //https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition
 
 const styles = StyleSheet.create({
   Tootlip__container: {
-    cursor: 'pointer',
-    position: 'absolute',
-    right: 40,
     [MOBILE_PORTRAIT]: {
-      right: 20,
     },
     [MOBILE_LANDSCAPE]: {
-      cursor: 'pointer',
-      position: 'absolute',
-      left: 10,
     },
     [TABLET_PORTRAIT]: {
     },
@@ -31,11 +26,14 @@ const styles = StyleSheet.create({
     [LAPTOPS]: {
     }
   },
-  Tootlip__circle: {
-    height: '25px',
-    width: '25px',
-    backgroundColor: '#40c7c7',
-    borderRadius: '50%',
+  Tootlip__menu: {
+    position: 'absolute',
+    paddingTop: '5%',
+    paddingLeft: '1%',
+    width: '0',
+    height: '100',
+    transition: '.5s ease',
+    color: 'white',
 
     [MOBILE_PORTRAIT]: {
     },
@@ -51,20 +49,35 @@ const styles = StyleSheet.create({
 });
 
 class Tootlip extends React.Component {
-  handleOpenToggle(e) {
-    e.preventDefault();
-    console.log("Hovering!");
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false,
+    }
+    this.handleMenu = this.handleMenu.bind(this);
   }
 
-  handleCloseToggle(e) {
+  handleMenu(e) {
     e.preventDefault();
-    console.log("Byee!");
+    this.setState(prevState => ({
+      active: !prevState.active
+    }));
   }
 
   render() {
     return (
-      <div className={css(styles.Tootlip__container)}>
-        <p className={css(styles.Tootlip__circle)} onMouseEnter={this.handleOpenToggle} onMouseLeave={this.handleCloseToggle}></p>
+      <div>
+        <TooltipCircle
+          onClick={this.handleMenu}
+        />
+        <div className={this.state.active ? css(styles.Tootlip__menu) :  null}>
+          <div>
+            <p>Jazz</p>
+            <p>Soul</p>
+            <p>Funk</p>
+            <p>Rock</p>
+          </div>
+        </div>
       </div>
     );
   }
