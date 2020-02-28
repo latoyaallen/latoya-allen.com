@@ -28,15 +28,20 @@ const styles = StyleSheet.create({
     }
   },
   Tootlip__menu: {
-    paddingTop: '5%',
-    paddingLeft: '2%',
-    width: '0',
+    position: 'absolute',
+    backgroundColor: 'black',
+    marginTop: '5%',
+    paddingLeft: '5%',
+    width: '100%',
+    height: '100%',
     transition: '.4s ease',
     color: 'white',
     // we need to keep these here, or they add extra space on the page
     fontSize: '2.0em',
 
     [MOBILE_PORTRAIT]: {
+    width: '100%',
+    height: '100%',
     },
     [MOBILE_LANDSCAPE]: {
     },
@@ -45,6 +50,7 @@ const styles = StyleSheet.create({
     [TABLET_LANDSCAPE]: {
     },
     [LAPTOPS]: {
+    width: '0',
     }
   },
   Tootlip__none: {
