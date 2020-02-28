@@ -10,6 +10,7 @@ import {
 } from '../../lib/breakpoints';
 
 import TooltipCircle from './TooltipCircle';
+import Categories from './Categories';
 
 //https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition
 
@@ -27,13 +28,29 @@ const styles = StyleSheet.create({
     }
   },
   Tootlip__menu: {
-    position: 'absolute',
-    paddingTop: '5%',
-    paddingLeft: '1%',
+    paddingTop: '6%',
+    paddingLeft: '2%',
     width: '0',
     height: '100',
-    transition: '.5s ease',
+    transition: '.4s ease',
     color: 'white',
+    // we need to keep these here, or they add extra space on the page
+    fontWeight: 'bold',
+    fontSize: '2.4em',
+
+    [MOBILE_PORTRAIT]: {
+    },
+    [MOBILE_LANDSCAPE]: {
+    },
+    [TABLET_PORTRAIT]: {
+    },
+    [TABLET_LANDSCAPE]: {
+    },
+    [LAPTOPS]: {
+    }
+  },
+  Tooltip__text: {
+    cursor: 'pointer',
 
     [MOBILE_PORTRAIT]: {
     },
@@ -55,6 +72,7 @@ class Tootlip extends React.Component {
       active: false,
     }
     this.handleMenu = this.handleMenu.bind(this);
+    this.handleCategory = this.handleCategory.bind(this);
   }
 
   handleMenu(e) {
@@ -64,6 +82,11 @@ class Tootlip extends React.Component {
     }));
   }
 
+  handleCategory(e) {
+    e.preventDefault();
+    alert("Coming Soon :) ");
+  }
+
   render() {
     return (
       <div>
@@ -71,12 +94,9 @@ class Tootlip extends React.Component {
           onClick={this.handleMenu}
         />
         <div className={this.state.active ? css(styles.Tootlip__menu) :  null}>
-          <div>
-            <p>Jazz</p>
-            <p>Soul</p>
-            <p>Funk</p>
-            <p>Rock</p>
-          </div>
+          <Categories
+            handleCategory={this.handleCategory}
+          />
         </div>
       </div>
     );
