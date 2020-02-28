@@ -34,6 +34,7 @@ const Categories = (props) => (
     <p className={css(styles.Categories__text)} onClick={props.handleCategory}>R&B</p>
     <p className={css(styles.Categories__text)} onClick={props.handleCategory}>Hip Hop</p>
     <p className={css(styles.Categories__text)} onClick={props.handleCategory}>Classical</p>
+    <p className={css(styles.Categories__text)} onClick={props.handleCategory}>Home</p>
   </div>
 );
 

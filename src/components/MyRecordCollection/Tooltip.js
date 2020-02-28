@@ -28,14 +28,13 @@ const styles = StyleSheet.create({
     }
   },
   Tootlip__menu: {
-    paddingTop: '2%',
+    paddingTop: '5%',
     paddingLeft: '2%',
     width: '0',
     transition: '.4s ease',
     color: 'white',
     // we need to keep these here, or they add extra space on the page
-    fontWeight: 'bold',
-    fontSize: '2.4em',
+    fontSize: '2.0em',
 
     [MOBILE_PORTRAIT]: {
     },

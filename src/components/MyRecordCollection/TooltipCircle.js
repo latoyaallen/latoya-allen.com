@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 40,
     [MOBILE_PORTRAIT]: {
-      right: 20,
+      left: 20,
     },
     [MOBILE_LANDSCAPE]: {
       cursor: 'pointer',

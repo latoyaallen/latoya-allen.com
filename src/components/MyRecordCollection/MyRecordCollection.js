@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from './Title';
+import AppTitle from './AppTitle';
 import IntroQuote from './IntroQuote';
 import VisibleRecords from './VisibleRecords';
 import Tooltip from './Tooltip';
@@ -10,8 +10,7 @@ class MyRecordCollection extends React.Component {
     return (
       <div>
         <Tooltip />
-        <Title
-          title={"My Record Collection"}
+        <AppTitle
         />
         <IntroQuote />
         <VisibleRecords
