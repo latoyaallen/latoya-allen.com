@@ -28,10 +28,9 @@ const styles = StyleSheet.create({
     }
   },
   Tootlip__menu: {
-    paddingTop: '6%',
+    paddingTop: '2%',
     paddingLeft: '2%',
     width: '0',
-    height: '100',
     transition: '.4s ease',
     color: 'white',
     // we need to keep these here, or they add extra space on the page
@@ -49,9 +48,11 @@ const styles = StyleSheet.create({
     [LAPTOPS]: {
     }
   },
+  Tootlip__none: {
+    display: 'none',
+  },
   Tooltip__text: {
     cursor: 'pointer',
-
     [MOBILE_PORTRAIT]: {
     },
     [MOBILE_LANDSCAPE]: {
@@ -93,7 +94,7 @@ class Tootlip extends React.Component {
         <TooltipCircle
           onClick={this.handleMenu}
         />
-        <div className={this.state.active ? css(styles.Tootlip__menu) :  null}>
+        <div className={this.state.active ? css(styles.Tootlip__menu) : css(styles.Tootlip__none)}>
           <Categories
             handleCategory={this.handleCategory}
           />
